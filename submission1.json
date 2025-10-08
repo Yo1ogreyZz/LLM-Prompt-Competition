@@ -1,0 +1,1512 @@
+[
+  {
+    "id": "1",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是報告排版師，強制三段結構。"
+      },
+      {
+        "role": "user",
+        "content": "輸出一篇短報告，必須包含三個標題段：背景、分析、結論，且順序不可更改。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'好吃'"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是報告排版師，強制三段結構。"
+      },
+      {
+        "role": "user",
+        "content": "輸出一篇短報告，必須包含三個標題段：背景、分析、結論，且順序不可更改。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需积极正向"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为 Markdown 格式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'差异'"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是测试用例生成器，关注样本数与覆盖率。"
+      },
+      {
+        "role": "user",
+        "content": "请生成 8 条测试输入示例（JSON 数组），每条包含字段 'input' 和 'expected'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用英文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为纯 JSON（无额外文本）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 6 条"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需中立且正式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'差异'"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是文档工程师，负责生成技术文档模板。"
+      },
+      {
+        "role": "user",
+        "content": "请生成一篇 Markdown 文档，包含标题、摘要、步骤三部分，步骤要求 3 条。仅输出 Markdown。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用英文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'差异'"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位代码说明书编写器，注重结构化输出。"
+      },
+      {
+        "role": "user",
+        "content": "请输出一段代码注释模板（JSON 格式），包含字段: 'title','desc','example'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'美味'"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是推理測試出題者，注重先後邏輯。"
+      },
+      {
+        "role": "user",
+        "content": "請先說明前提（一句），然後推導結論（一句），最後給出一個例外情況（一句）。三部分每行一段。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "每条不超过 20 个中文字符"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是推理測試出題者，注重先後邏輯。"
+      },
+      {
+        "role": "user",
+        "content": "請先說明前提（一句），然後推導結論（一句），最後給出一個例外情況（一句）。三部分每行一段。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是報告排版師，強制三段結構。"
+      },
+      {
+        "role": "user",
+        "content": "輸出一篇短報告，必須包含三個標題段：背景、分析、結論，且順序不可更改。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "每条不超过 30 个中文字符"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "必须包含字段：title, content"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是交互設計師，強制步驟性輸出。"
+      },
+      {
+        "role": "user",
+        "content": "先列出檢查清單（JSON 陣列），再給出執行順序（文本），中間不得插入其它內容。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为纯 JSON（无额外文本）"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是测试用例生成器，关注样本数与覆盖率。"
+      },
+      {
+        "role": "user",
+        "content": "请生成 8 条测试输入示例（JSON 数组），每条包含字段 'input' 和 'expected'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a bilingual assistant that enforces language constraints."
+      },
+      {
+        "role": "user",
+        "content": "Please answer in English only. Output must be a single paragraph under 50 words."
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是程式碼審查員，注重禁止特定 API 的使用。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一段 Python 程式碼（冒泡排序），禁止使用內建函數 'sorted' 或 'sort'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "每条不超过 12 个中文字符"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'示例'"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是推理測試出題者，注重先後邏輯。"
+      },
+      {
+        "role": "user",
+        "content": "請先說明前提（一句），然後推導結論（一句），最後給出一個例外情況（一句）。三部分每行一段。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需中立且正式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是表格生成器，專注字段順序與邊框。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一個帶邊框的 Markdown 表格，表頭為 '項目|數值|說明'，且至少 4 行數據。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为纯 JSON（无额外文本）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a bilingual assistant that enforces language constraints."
+      },
+      {
+        "role": "user",
+        "content": "Please answer in English only. Output must be a single paragraph under 50 words."
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为 Markdown 格式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 8 条"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是文档工程师，负责生成技术文档模板。"
+      },
+      {
+        "role": "user",
+        "content": "请生成一篇 Markdown 文档，包含标题、摘要、步骤三部分，步骤要求 3 条。仅输出 Markdown。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 4 条"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是交互設計師，強制步驟性輸出。"
+      },
+      {
+        "role": "user",
+        "content": "先列出檢查清單（JSON 陣列），再給出執行順序（文本），中間不得插入其它內容。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需中立且正式"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是程式碼審查員，注重禁止特定 API 的使用。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一段 Python 程式碼（冒泡排序），禁止使用內建函數 'sorted' 或 'sort'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是学术写作审稿人，要求客观中立。"
+      },
+      {
+        "role": "user",
+        "content": "请用正式、客观口吻写一段 3 句的话，避免使用感叹号与情绪化形容词。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'示例'"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需积极正向"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为纯 JSON（无额外文本）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'美味'"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位食品安全审核员，负责筛选名录。"
+      },
+      {
+        "role": "user",
+        "content": "请列出 5 种低糖零食（JSON 数组），禁止出现品牌名和词 '零食'（需用其他措辞）。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'好吃'"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是推理測試出題者，注重先後邏輯。"
+      },
+      {
+        "role": "user",
+        "content": "請先說明前提（一句），然後推導結論（一句），最後給出一個例外情況（一句）。三部分每行一段。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "必须包含字段：title, content"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "每条不超过 15 个中文字符"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是表格生成器，專注字段順序與邊框。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一個帶邊框的 Markdown 表格，表頭為 '項目|數值|說明'，且至少 4 行數據。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需积极正向"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'差异'"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是中文写作助手，擅长繁体输出。"
+      },
+      {
+        "role": "user",
+        "content": "請用繁體中文回答，不得夾雜英文或簡體字。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为 Markdown 格式"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a bilingual assistant that enforces language constraints."
+      },
+      {
+        "role": "user",
+        "content": "Please answer in English only. Output must be a single paragraph under 50 words."
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "每条不超过 15 个中文字符"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'差异'"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位数据整理师，善于控制记录数量和长度。"
+      },
+      {
+        "role": "user",
+        "content": "请输出恰好 5 条会议要点，每条不超过 20 个汉字，逐行输出。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位文学写作导师，熟悉各种文体格式并严格把关输出结构。"
+      },
+      {
+        "role": "user",
+        "content": "请写一首五言绝句，主题为春天，不允许使用标点符号，输出仅为诗句段落。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需中立且正式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位文学写作导师，熟悉各种文体格式并严格把关输出结构。"
+      },
+      {
+        "role": "user",
+        "content": "请写一首五言绝句，主题为春天，不允许使用标点符号，输出仅为诗句段落。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为纯 JSON（无额外文本）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需中立且正式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用英文输出"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是表格生成器，專注字段順序與邊框。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一個帶邊框的 Markdown 表格，表頭為 '項目|數值|說明'，且至少 4 行數據。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 3 条"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用繁体中文输出"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位代码说明书编写器，注重结构化输出。"
+      },
+      {
+        "role": "user",
+        "content": "请输出一段代码注释模板（JSON 格式），包含字段: 'title','desc','example'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为纯 JSON（无额外文本）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'测试'"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位代码说明书编写器，注重结构化输出。"
+      },
+      {
+        "role": "user",
+        "content": "请输出一段代码注释模板（JSON 格式），包含字段: 'title','desc','example'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 6 条"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位代码说明书编写器，注重结构化输出。"
+      },
+      {
+        "role": "user",
+        "content": "请输出一段代码注释模板（JSON 格式），包含字段: 'title','desc','example'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是测试用例生成器，关注样本数与覆盖率。"
+      },
+      {
+        "role": "user",
+        "content": "请生成 8 条测试输入示例（JSON 数组），每条包含字段 'input' 和 'expected'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是学术写作审稿人，要求客观中立。"
+      },
+      {
+        "role": "user",
+        "content": "请用正式、客观口吻写一段 3 句的话，避免使用感叹号与情绪化形容词。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位代码说明书编写器，注重结构化输出。"
+      },
+      {
+        "role": "user",
+        "content": "请输出一段代码注释模板（JSON 格式），包含字段: 'title','desc','example'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'样本'"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是中文写作助手，擅长繁体输出。"
+      },
+      {
+        "role": "user",
+        "content": "請用繁體中文回答，不得夾雜英文或簡體字。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "必须包含字段：title, content"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是交互設計師，強制步驟性輸出。"
+      },
+      {
+        "role": "user",
+        "content": "先列出檢查清單（JSON 陣列），再給出執行順序（文本），中間不得插入其它內容。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "必须包含字段：title, content"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为 Markdown 格式"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是测试用例生成器，关注样本数与覆盖率。"
+      },
+      {
+        "role": "user",
+        "content": "请生成 8 条测试输入示例（JSON 数组），每条包含字段 'input' 和 'expected'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'样本'"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "每条不超过 20 个中文字符"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'差异'"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是推理測試出題者，注重先後邏輯。"
+      },
+      {
+        "role": "user",
+        "content": "請先說明前提（一句），然後推導結論（一句），最後給出一個例外情況（一句）。三部分每行一段。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为 Markdown 格式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用繁体中文输出"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是测试用例生成器，关注样本数与覆盖率。"
+      },
+      {
+        "role": "user",
+        "content": "请生成 8 条测试输入示例（JSON 数组），每条包含字段 'input' 和 'expected'。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需积极正向"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "主题必须围绕环境保护或可持续发展"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出必须为 Markdown 格式"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是推理測試出題者，注重先後邏輯。"
+      },
+      {
+        "role": "user",
+        "content": "請先說明前提（一句），然後推導結論（一句），最後給出一個例外情況（一句）。三部分每行一段。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'样本'"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "每条不超过 12 个中文字符"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需中立且正式"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "输出必须包含标题、正文、结论三部分且顺序不可更改"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是報告排版師，強制三段結構。"
+      },
+      {
+        "role": "user",
+        "content": "輸出一篇短報告，必須包含三個標題段：背景、分析、結論，且順序不可更改。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'示例'"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需积极正向"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位文学写作导师，熟悉各种文体格式并严格把关输出结构。"
+      },
+      {
+        "role": "user",
+        "content": "请写一首五言绝句，主题为春天，不允许使用标点符号，输出仅为诗句段落。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 9 条"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位数据整理师，善于控制记录数量和长度。"
+      },
+      {
+        "role": "user",
+        "content": "请输出恰好 5 条会议要点，每条不超过 20 个汉字，逐行输出。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "先输出分析步骤（列点），再输出结论句（单段）"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 9 条"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是交互設計師，強制步驟性輸出。"
+      },
+      {
+        "role": "user",
+        "content": "先列出檢查清單（JSON 陣列），再給出執行順序（文本），中間不得插入其它內容。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用英文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'测试'"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a bilingual assistant that enforces language constraints."
+      },
+      {
+        "role": "user",
+        "content": "Please answer in English only. Output must be a single paragraph under 50 words."
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用英文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "语气需中立且正式"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是一位食品安全审核员，负责筛选名录。"
+      },
+      {
+        "role": "user",
+        "content": "请列出 5 种低糖零食（JSON 数组），禁止出现品牌名和词 '零食'（需用其他措辞）。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'TODO'"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 6 条"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用英文输出"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是表格生成器，專注字段順序與邊框。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一個帶邊框的 Markdown 表格，表頭為 '項目|數值|說明'，且至少 4 行數據。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语言约束",
+        "constraint_detail": "必须使用繁体中文输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "结构约束",
+        "constraint_detail": "JSON 对象必须按指定字段顺序输出"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "形式约束",
+        "constraint_detail": "输出为单段落纯文本，不要换行"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是表格生成器，專注字段順序與邊框。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一個帶邊框的 Markdown 表格，表頭為 '項目|數值|說明'，且至少 4 行數據。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 7 条"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "内容约束",
+        "constraint_detail": "禁止出现词语：'样本'"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是学术写作审稿人，要求客观中立。"
+      },
+      {
+        "role": "user",
+        "content": "请用正式、客观口吻写一段 3 句的话，避免使用感叹号与情绪化形容词。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "语义约束",
+        "constraint_detail": "禁止使用夸张或情绪化形容词"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 4 条"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是表格生成器，專注字段順序與邊框。"
+      },
+      {
+        "role": "user",
+        "content": "請輸出一個帶邊框的 Markdown 表格，表頭為 '項目|數值|說明'，且至少 4 行數據。"
+      }
+    ],
+    "condition": [
+      {
+        "msg_index": 1,
+        "constraint_type": "流程约束",
+        "constraint_detail": "必须先声明假设，再给出推理过程，最后给出结果"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "数量约束",
+        "constraint_detail": "输出项数恰好为 6 条"
+      },
+      {
+        "msg_index": 1,
+        "constraint_type": "词汇约束",
+        "constraint_detail": "禁止出现词语：'好吃'"
+      }
+    ]
+  }
+]
